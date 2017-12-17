@@ -1,0 +1,2589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_hoja_de_verificacion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grayhatcorp.invetsa.invetsa.hoja_verificacion.HojaDeVerificacion"
+    tools:showIn="@layout/activity_hoja_de_verificacion">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    >
+
+                    <AutoCompleteTextView
+                        android:text=""
+                        android:hint="EMPRESA"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/autoEmpresa"
+                        android:layout_weight="1"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="GRANJA:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal|bold" />
+
+                    <Spinner
+                        android:text=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_Granja" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                    <TextView
+                        android:text="UNIDAD:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="normal|bold" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/sp_Unidad"/>
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    >
+
+                    <EditText
+                        android:text=""
+                        android:hint="RESPONSABLE DE INVETSA"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_Responsable_invetsa"
+                        android:layout_weight="1"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bk_tabla"
+                        android:layout_marginBottom="5sp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HORA DE INGRESO"
+                            android:padding="5sp"
+                            android:textColor="@color/colorPrimary"
+                            />
+                        <Button
+                            style="@style/boton_1"
+                            android:text="00:00"
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="time"
+                            android:id="@+id/et_hora_ingreso"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bk_tabla"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HORA DE SALIDA"
+                            android:padding="5sp"
+                            android:textColor="@color/colorPrimary"/>
+                        <Button
+                            style="@style/boton_1"
+                            android:text="00:00"
+                            android:layout_width="150sp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:id="@+id/et_hora_salida"/>
+                    </TableRow>
+                </TableLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    >
+
+                    <EditText
+                        android:text=""
+                        android:hint="RESPONSABLE DE INCUBADORA"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_Responsable_Incubadora"
+                        android:layout_weight="1"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bk_tabla">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:background="@color/colorPrimary">
+
+                    <TextView
+                        android:text="Línea Genética"
+                        style="@style/titulo_1"
+                        android:id="@+id/textLinaGenetica"/>
+                    <TextView
+                        android:text="COBB"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ROSS"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="HYBRO X"
+                        style="@style/titulo_1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <TextView
+                        android:text="Nro de nacimientos / semana"
+                        android:id="@+id/tv_nro_nacimiento"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        />
+                    <AutoCompleteTextView
+                        android:hint="COBB"
+                        android:text="2 (M y S)"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/auto_cobb"
+                        android:layout_weight="1"
+
+                        />
+                    <AutoCompleteTextView
+                        android:hint="ROSS"
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ross - Cobb"
+                        android:id="@+id/auto_ross"
+                        android:layout_weight="1"
+
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:ems="10"
+                        android:textColor="#000"
+                        android:id="@+id/et_hybro" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        android:text="Laboratorio de Preparación de Vacuna"
+                        style="@style/titulo_1" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    >
+
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1"/>
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    >
+
+                    <TextView
+                        android:text="Temperatura 24 a 27 °C"
+                        android:id="@+id/text2427C"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <AutoCompleteTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/autoTemperatura"
+                        android:entries="@array/Temperatura"
+                        android:ems="10"
+                        />
+
+
+                    <TextView
+                        android:text="Humedad 65 % HR"
+                        android:id="@+id/textHumedad"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Humedad"
+                        android:textAlignment="center"
+                        android:entries="@array/Humedad"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:text="Ventilación forzada"
+                        android:id="@+id/textVentilacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/sp_Ventilacion"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Presión positiva"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/textPresion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/sp_Presion"
+                        android:entries="@array/Presion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:text="Limpieza después de c/vacunacién"
+                        android:id="@+id/textLimpiezaVacunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_LimpiezaVacunacion"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Desinfección Post limpieza"
+                        android:id="@+id/textDesinfeccion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Desinfeccion"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        android:text="Equipo Invetsa-Temp y Otros"
+                        style="@style/titulo_1"
+                        android:id="@+id/textequiposInvetsa"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    >
+
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1"/>
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1"/>
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1"/>
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:text="Guantes y Lentes"
+                        android:id="@+id/textGuatesLentes"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_GuantesLentes"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Calentador de Agua"
+                        android:id="@+id/textCalentadordeAgua"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_CalentadordeAgua"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:text="Recipiente de Agua"
+                        android:id="@+id/textRecipiente"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_RecipientedeAgua"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Termómetro"
+                        android:id="@+id/textTermometro"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Termometro"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:paddingStart="10dp"
+                    >
+
+                    <TextView
+                        android:text="T °27 a 37° C (Promedio 32°C)"
+                        android:id="@+id/textprometioTemperatura"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        />
+
+                    <AutoCompleteTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/auto_PromedioTemperatura"
+                        android:entries="@array/Temperatura"
+                        android:ems="10"
+                        />
+
+                    <TextView
+                        android:text="Soporte de Ampollas"
+                        android:id="@+id/textSoporteAmpollas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_SoporteAmpollas"
+                        android:textAlignment="center"
+
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="10dp">
+
+                    <TextView
+                        android:text="Rompe Ampollas"
+                        android:id="@+id/textRompeAmpollas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_RompeAmpollas"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Jeringas 5 y/o 10 ml"
+                        android:id="@+id/textjeringas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <AutoCompleteTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:id="@+id/auto_Jeringas"
+                        android:layout_weight="1"
+                        android:entries="@array/Jeringas"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:text="Aguja 18 G x 18 1 ½ (rosada)"
+                        android:id="@+id/textAgujas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Agujas"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Alcohol"
+                        android:id="@+id/textAlcohol"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Alcohol"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    >
+
+                    <TextView
+                        android:text="Algodón"
+                        android:id="@+id/textAlgodon"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_algodon"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Papel Toalla"
+                        android:id="@+id/textPapelToalla"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Papel"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:text="Colorante Marek Dosis"
+                        android:id="@+id/textColorantes"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="13sp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:id="@+id/et_colorantes"
+                        android:textAlignment="center"
+                        android:ems="10"
+                        />
+
+                    <TextView
+                        android:text="Tuberia nueva para vacuna"
+                        android:id="@+id/textTuberia"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/auto_Tuberia"
+                        android:layout_weight="1"
+                        android:entries="@array/Tuberia"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp">
+
+                    <TextView
+                        android:text="Conectores 'Y'"
+                        android:id="@+id/textConectores"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Conectores"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Esterilizador/Autoclave"
+                        android:id="@+id/textEsterilizador"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <AutoCompleteTextView
+                        android:textColor="#000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/auto_Esterilizador"
+                        android:ems="10"
+                        android:layout_weight="1"
+                        android:entries="@array/Esterilizador"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        android:text="Sala de Vacunación"
+                        style="@style/titulo_1"
+                        />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    >
+
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ESPERADO"
+                        style="@style/titulo_1" />
+                    <TextView
+                        android:text="ENCONTRADO"
+                        style="@style/titulo_1" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="Mesa Circular-Lineal-Individual"
+                        android:id="@+id/textMEsa"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Mesa"
+                        android:textAlignment="center"
+                        android:entries="@array/Mesa"/>
+
+                    <TextView
+                        android:text="Nro de Máquinas"
+                        android:id="@+id/textMaquinas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:ems="10"
+                        android:id="@+id/et_Maquinas"
+                        android:textColor="#000"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    >
+
+                    <TextView
+                        android:text="Cambio de Agujas c/2,000 pollos"
+                        android:id="@+id/textCambioAgujas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_CambioAgujas"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Cajas plásticas / carton"
+                        android:id="@+id/textCajas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_Cajas"
+                        android:textAlignment="center"
+                        android:entries="@array/Cajas"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <TextView
+                        android:text="T °24 a 27 °C"
+                        android:id="@+id/textTemperaturaVAcunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <AutoCompleteTextView
+                        android:text=""
+                        android:layout_width="200px"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/autoTemperaturaVacunacion"
+
+                        android:textColor="#000"/>
+
+                    <TextView
+                        android:text="Humedad 60 a 70% HR"
+                        android:id="@+id/textHumedadVacunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <AutoCompleteTextView
+                        android:text=""
+                        android:layout_width="200px"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/autoHumedadVacunacion"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:textColor="#000"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:text="Ventilación Forzada"
+                        android:id="@+id/textVentilacionForzada"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/sp_VentilacionForzada"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Presión Negativa"
+                        android:id="@+id/textPresionVacunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/sp_PresionVacunacion"
+                        android:textAlignment="center"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <TextView
+                        android:text="Limpieza después de c/vacunación"
+                        android:id="@+id/textLimpiezaSalaVacunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/sp_LimpiezaSalaVacunacion"
+                        android:entries="@array/Ventilacion"/>
+
+                    <TextView
+                        android:text="Desinfección Post limpieza"
+                        android:id="@+id/textDesinfeccionSalaVacunacion"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textAlignment="center"
+                        android:id="@+id/sp_DesinfeccionSalaVacunacion"
+                        android:entries="@array/Ventilacion"/>
+                </TableRow>
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk_tabla">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+                    <TextView
+                        android:text="MANIPULACIÓN Y DILUCIÓN DE LA VACUNA CONGELADA"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textVacunaCongelada"
+                        android:layout_span="3"
+                        style="@style/titulo_1"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Asignar con (0,1) si el procedimiento estuviese siendo seguido: (Puntaje Máximo 2.0)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        android:layout_span="3"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="1"
+                        android:layout_width="60px"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Verificación del nivel de nitrógeno en formato (mínimo 6 pulgadas), obligatorio los días de vacunación"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <EditText
+                        android:hint="observaciones"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|left"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        android:layout_marginLeft="-110dp"/>
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_1"
+                        android:textColor="#000"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="2"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Diluyente usado en buenas condiciones rojo y transparente"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <EditText
+                        android:hint="observaciones"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|left"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        android:layout_marginLeft="-110dp"/>
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_2"
+                        android:textColor="#000"/>
+
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+                    <TextView
+                        android:text="3"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Jeringas descartables individuales para cada tipo de vacuna, colorante y antibiótico (no usan)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_3"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="4"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Tiempo mínimo para añadir antibiótico y colorante antes de preparar la vacuna  15 minutos"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_4"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="5"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Uso de colorante y dosis de 0.5 ml para bolsas 200 y 400 ml , 1 ml para 800 ml y 1.5 ml para 1200 y 1600 ml"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_5"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="6"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Jeringa cargada con 2 ml de diluyente para extraer la vacuna ya descongelada"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_6"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="7"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Uso de guantes y protector ocular para manipulación de vacunas congeladas al retirar la vacuna del tanque"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_7"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="8"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Buenas condiciones de funcionamiento del Invetsa-temp de 27 a 37 º C (promedio 32º C)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_8"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="9"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Número de ampollas retiradas por vez para descongelación, máximo 2 ampollas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_9"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="10"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Tiempo máximo para descongelamiento de la ampolla de 1 minuto y reconstitución en diluyente 30 segundos"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_10"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="11"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Uso de pajilla de aluminio para descongelamiento de las ampollas en el agua, evita introducir la mano en el agua "
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_11"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="12"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Favorecer el descongelamiento de la ampolla en forma suave (movimiento circulares y verticales)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_12"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="13"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Secar las ampollas con papel toalla y usar el rompe ampollas"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_13"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="14"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Uso del soporte de ampollas, absorción y reconstitución de la vacuna en el diluyente suave y sin presión en Jeringa"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_14"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="15"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Uso de aguja adecuada para la extracción de la vacuna, 18 G x 1 ½” (color rosado) "
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"/>
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_15"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="16"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Realización de enjuague de ampollas (incluye cuerpo y tapa de la ampolla)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_16"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="17"
+                        style="@style/TxtSIM"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:text="Secuencia correcta de preparación de la vacuna (antibiótico, colorante y 15 minutos después vacunas congeladas)"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_17"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="18"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Tiempo de consumo de la solución vacunal preparada máximo 45 minutos y homogenizar la vacuna cada 10 minutos"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_18"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="19"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Perfecta distribución de las mangueras que conducen la vacuna (levemente estiradas, evitando el 'efecto hamaca')"
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_19"
+                        android:textColor="#000"
+                        android:layout_gravity="right"
+                        android:layout_marginStart="65dp"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="20"
+                        style="@style/TxtSIM"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:text="Conteo celular - % de Viabilidad mayor a 86 % "
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <EditText
+                        android:hint="observaciones"
+                        android:inputType="textMultiLine"
+                        android:gravity="top|left"
+                        android:ems="10"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:scrollbars="vertical"
+                        android:layout_marginLeft="-110dp"/>
+
+                    <CheckBox
+                        android:layout_width="50px"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal"
+                        android:ems="4"
+                        android:id="@+id/cb_20"
+                        android:textColor="#000"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text=""
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp" />
+
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:paddingRight="15sp"
+                        android:gravity="right"
+                        android:text="SUMATORIA:"/>
+                    <TextView
+                        android:id="@+id/tv_Sumatoria_vacuna_congelada"
+                        android:text="0"
+                        style="@style/TxtSIM"/>
+                </TableRow>
+
+
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bk_tabla">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:text="MANTENIMIENTO Y LIMPIEZA DE LAS VACUNADORAS ACCUVAC   "
+                    style="@style/titulo_1"
+                    android:background="@color/colorPrimary"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Asignar con una (X) las irregularidades encontradas:	 (Puntaje Máximo Promedio 1.5)		          Puntaje:"
+                    style="@style/TxtSIM"
+                    android:paddingLeft="15sp"
+                    />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:text="Modificar lista"
+                        android:id="@+id/bt_modificar_lista"
+                        android:background="@drawable/bk_boton"
+                        android:gravity="center"
+                        android:textSize="15sp"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginBottom="15sp"
+
+                        />
+
+                </LinearLayout>
+
+            </TableRow>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tb_mantenimiento_limpieza"
+                        >
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark">
+                            <TextView
+                                android:text="NOMBRE DE VACUNADOR"
+                                android:layout_width="400sp"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textStyle="normal"
+                                style="@style/titulo_1" />
+
+
+                            <TextView
+                                android:text="N° de  Máquina"
+                                android:layout_width="150sp"
+                                android:textStyle="normal"
+                                android:layout_height="match_parent"
+                                style="@style/titulo_1"/>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:id="@+id/ll_irregularidades"
+                                android:layout_span="1"
+
+                                >
+                                <TextView
+                                    android:text="* IRREGULARIDADES"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center"
+                                    style="@style/titulo_1"
+                                    android:textStyle="normal"
+                                    android:id="@+id/textView8" />
+                                <TableRow
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:text="1"
+                                        android:layout_width="60px"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT"/>
+                                    <TextView
+                                        android:text="2"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="3"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="4"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="5"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="6"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="7"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="8"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="9"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT"
+                                        />
+                                    <TextView
+                                        android:text="10"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="11"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT"/>
+                                    <TextView
+                                        android:text="12"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="13"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                    <TextView
+                                        android:text="14"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIM" />
+                                    <TextView
+                                        android:text="15"
+                                        android:layout_width="60px"
+                                        android:gravity="center"
+                                        style="@style/TxtSIMT" />
+                                </TableRow>
+                            </LinearLayout>
+
+                        </TableRow>
+
+
+
+
+
+                    </TableLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TextViewSumatoriaVacunadorasACCUVAC"
+                    android:gravity="right"
+                    android:text="PROMEDIO:"
+                    android:layout_weight="0"
+                    style="@style/TxtSIM"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_Promedio_Vacunadoras_ACCUVAC"
+                    android:gravity="right"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:layout_weight="0"/>
+            </LinearLayout>
+            <TextView
+                android:text="Irregularidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="1. Acumulo de suciedad o puntos sucios en la placa de sensores Twin Touch - Zootec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="2. Falta de uno o más tornillos visibles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="3. Presión de aire comprimido fuera de rango recomendado (60 - 65 psi para Accuvac y 65 – 75 psi para Twin Shot)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="4. Colocación incorrecta de la aguja (bisel hacia arriba)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="5. Inadecuada regulación de la salida de la aguja o agujas, que provoca que vacuna quede en la parte interna de la maquina "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="6. Colocación inadecuada de las jeringas y/o mangueras descartables"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="7. Falta de calibración de la dosis 0.2 ml en Marek y 0.1 ml en Oleosas "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="8. No verificar la calibración de la dosis de la maquina cada 2,000 pollos vacunados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="9. No cumplen con el cambio de agujas de la maquina cada 2,000 pollos vacunados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="10. No tienen asperjadores con alcohol para la limpieza de la maquina cada 500 pollos vacunados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="11. No se lavan las manos y desinfectan antes de  realizar el cambio de agujas de las maquinas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="12. Acumulo de suciedad entre el modulo inyector y el modulo inferior de la maquina "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="13. Desarmado incorrecto y lavado inadecuado de las maquinas, uso de detergente y material abrasivos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <TextView
+                android:text="14. Inadecuada esterilización de la válvula de control, debe ser a 121° C, a 15 psi de presión por 20 minutos envuelto en papel craf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal|bold"
+                style="@style/TxtSIM"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="15. Otras irregularidades. Especificar "
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    style="@style/TxtSIM"
+                    android:layout_weight="0"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:ems="10"
+                    android:id="@+id/editTextObservaciones"/>
+            </LinearLayout>
+        </TableLayout>
+
+
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bk_tabla"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:text="CONTROL DE INDICE DE EFICIENCIA DE VACUNACION Y PRODUCTIVIDAD"
+                    style="@style/titulo_1"
+                    android:background="@color/colorPrimary"
+                    />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="(Puntaje Máximo Índice de Eficiencia  5.5)"
+                    style="@style/TxtSIM">
+                </TextView>
+            </TableRow>
+
+
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tb_control_indice"
+                    android:background="@drawable/bk_tabla"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tr_control_indice_titulo"
+                        android:background="@color/colorPrimaryDark"
+                        >
+                        <TextView
+                            android:text="Nombre de Vacunador"
+                            android:layout_width="250px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:text="N° Pollos vacunados/hora"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:text="Puntaje"
+                            android:layout_width="30px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+                        <TextView
+                            android:text="N° Pollos Controlados"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textColor="#000"/>
+                        <TextView
+                            android:text="N° Pollos No vacunados"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Heridos"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Mojados"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Mala posicion"
+                            android:textAlignment="center"
+                            android:textColor="#000" />
+
+                        <TextView
+                            android:text="N° Pollos vacu. correctamente"
+                            android:layout_width="100px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textColor="#000" />
+                        <TextView
+                            android:text="% de Eficiencia"
+                            android:layout_width="50px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:layout_gravity="center"
+                            android:textColor="#000" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tr_control_indice_promedio"
+                        >
+                        <TextView
+                            android:text="Promedio"
+                            android:layout_width="250px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_1"
+                            android:textColor="#000"
+                            />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_2"
+                            android:textColor="#000"                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_3"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_4"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_5"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_6"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_7"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_8"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:background="@drawable/bk_tabla"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_pro_9"
+                            android:textColor="#000"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tr_control_indice_sumatoria"
+                        >
+                        <TextView
+                            android:text="Sumatoria"
+                            android:layout_width="250px"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textColor="#000"/>
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_1"
+                            android:textColor="#000"
+                            />
+
+                        <TextView
+                            android:text="0"
+                            android:layout_width="30px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_2"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_3"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_4"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="50px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_5"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="50px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_6"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="50px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_7"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="100px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_8"
+                            android:textColor="#000"
+                            />
+                        <TextView
+                            android:text="0"
+                            android:layout_width="50px"
+                            android:gravity="center"
+                            style="@style/TxtSIM"
+                            android:id="@+id/tv_sum_9"
+                            android:textColor="#000"/>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/TxtSIM"
+                    android:textColor="#000"
+                    android:gravity="right"
+                    android:text="PUNTAJE:"
+                    android:layout_weight="0"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_puntaje_control_indice"
+                    android:gravity="right"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:layout_weight="0"/>
+            </LinearLayout>
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bk_tabla">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary">
+                <TextView
+                    android:text="PUNTAJE TOTAL OBTENIDO"
+                    style="@style/titulo_1"
+                    android:layout_weight="1"
+                    />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="MANIPULACION Y DILUCION DE LA VACUNA CONGELADA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal|bold"
+                    android:paddingLeft="15sp"
+
+                    />
+                <TextView
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:id="@+id/tv_ManipulacionDisolucion" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="MANTENIMIENTO Y LIMPIEZA DE LAS VACUNADORAS ACCUVAC - ZOOTEC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="normal|bold"
+                    android:paddingLeft="15sp"/>
+                <TextView
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:id="@+id/tv_MantenimientoyLimpiesa" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="INDICE DE EFICIENCIA DE VACUNACIÓN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="15sp"/>
+                <TextView
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:id="@+id/tv_IndicedeEficiencia" />
+            </TableRow>
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:text="PRODUCTIVIDAD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingLeft="15sp"/>
+                <TextView
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:id="@+id/tv_Productividad" />
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/TextViewtPUNTOSDECONTROL"
+                    android:text="PUNTAJE TOTAL:"
+                    android:gravity="right"
+                    android:textStyle="normal|bold"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+                <TextView
+                    android:paddingLeft="15sp"
+                    android:paddingRight="15sp"
+                    style="@style/TxtSIM"
+                    android:text="0"
+                    android:id="@+id/tv_Puntaje_total" />
+            </TableRow>
+
+
+
+
+        </TableLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25sp"
+            android:layout_marginBottom="25sp"
+            >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk_tabla">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary">
+                    <TextView
+                        android:text="VIABILIDAD CELULAR"
+                        style="@style/titulo_1"
+                        android:layout_span="4"
+                        />
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark">
+                    <TextView
+                        android:text="ANTIBIOTICO"
+                        style="@style/titulo_1"
+                        android:layout_width="400sp"
+                        />
+                    <TextView
+                        android:text="DOSIS"
+                        style="@style/titulo_1"
+                        android:layout_width="400sp"
+                        />
+
+                    <TextView
+                        android:text="TIEMPO (min)"
+                        style="@style/titulo_1"
+                        android:layout_width="200sp"
+                        android:id="@+id/textView20" />
+
+                    <TextView
+                        android:text="VC %"
+                        style="@style/titulo_1"
+                        android:layout_width="200sp"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:hint="ANTIBIOTICO # 1"
+                        android:id="@+id/et_antibiotico_1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="400sp"
+                        />
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_dosis_1"
+                        android:inputType="textMultiLine"
+                        android:layout_width="400sp"
+                        />
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/et_tiempo_1"
+                        />
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"
+                        android:id="@+id/et_vc_1"
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:hint="ANTIBIOTICO # 2"
+                        android:id="@+id/et_antibiotico_2"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_dosis_2"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_tiempo_2"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_vc_2"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:hint="ANTIBIOTICO # 3"
+                        android:id="@+id/et_antibiotico_3"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_dosis_3"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_tiempo_3"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_vc_3"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:hint="ANTIBIOTICO # 4"
+                        android:id="@+id/et_antibiotico_4"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_dosis_4"
+                        android:layout_width="400sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_tiempo_4"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_vc_4"
+                        android:layout_width="200sp"
+                        android:inputType="textMultiLine"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    >
+
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:paddingLeft="15sp"
+                        android:text="VC: Viabilidad celular"
+                        android:layout_span="3"
+                        />
+
+                    <EditText
+                        style="@style/TxtSIM"
+                        android:id="@+id/et_vc"
+                        android:text="0"
+                        android:layout_width="200sp"
+                        />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColorHint="@color/colorPrimary"
+
+            >
+
+            <EditText
+                android:text=""
+                android:hint="RECOMENDACIONES"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextRecomendaciones"
+                android:layout_weight="1"
+
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/bk_tabla"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        style="@style/titulo_1"
+                        android:layout_width="wrap_content"
+                        android:text="IMAGEN DEL RESPONSABLE:"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="250sp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/im_foto_jefe"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_camara"/>
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bk_tabla"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+
+                <Button
+                    style="@style/boton_1"
+                    android:text="firmar"
+                    android:paddingRight="2sp"
+                    android:paddingLeft="2sp"
+                    android:id="@+id/bt_firmar_1"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/im_firma_1"
+                    />
+
+
+                <TextView
+                    android:text="JEFE DE PLANTA DE INCUBACION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/TxtSIM"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                >
+
+                <Button
+                    style="@style/boton_1"
+                    android:text="Firmar"
+                    android:paddingRight="2sp"
+                    android:paddingLeft="2sp"
+                    android:id="@+id/bt_firmar_2"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/im_firma_2"
+                    />
+
+                <TextView
+                    android:text="POR: INVETSA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    style="@style/TxtSIM"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

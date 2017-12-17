@@ -1,0 +1,2573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_sistema_integral_monitoreo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5sp"
+    android:paddingRight="5sp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grayhatcorp.invetsa.invetsa.sistema_integral_monitoreo.SistemaIntegralMonitoreo"
+    tools:showIn="@layout/activity_sistema_integral_monitoreo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColorHint="@color/colorPrimary"
+                            >
+
+                            <AutoCompleteTextView
+                                android:text=""
+                                android:hint="EMPRESA"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/autoEmpresa"
+                                android:layout_weight="1"
+
+                                />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:text="GRANJA:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView5"
+                            android:textColor="@color/lila"
+                            android:textStyle="normal|bold" />
+
+                           <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColorHint="@color/colorPrimary"
+                            >
+                            <Spinner
+                                android:text=""
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/sp_Granja"
+                                android:layout_weight="1"/>
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:text="ZONA:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textView3"
+                            android:textColor="@color/lila"
+                            android:layout_below="@+id/textView"
+                            android:layout_toRightOf="@+id/editTextEmpresa"
+                            android:layout_toEndOf="@+id/editTextEmpresa"
+                            android:textStyle="normal|bold" />
+
+                        <!--   <AutoCompleteTextView
+                               android:text=""
+                               android:layout_width="200px"
+                               android:layout_height="wrap_content"
+                               android:id="@+id/autoZona"
+                               android:layout_weight="1" /> -->
+
+                        <Spinner
+                            android:text=""
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_Zona"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:text="GALPON:"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/textGalpon"
+                            android:textColor="@color/lila"
+                            android:textStyle="normal|bold" />
+
+                        <Spinner
+                            android:text=""
+                            android:layout_width="200px"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/sp_Galpon"
+                            android:layout_weight="1"/>
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5sp"
+                    >-->
+
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:padding="5sp">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp">
+
+                            <TextView
+                                android:text="EDAD:"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:gravity="center"
+                                android:textColor="@color/lila"
+                                android:textStyle="normal|bold"/>
+
+                            <!--<android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColorHint="@color/lila">
+
+                                <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="EDAD"
+                            android:textColor="#000"
+                            android:inputType="number"
+                            android:ems="10"
+                            android:text="0"
+                            android:id="@+id/editTextEdad" />-->
+                                <Spinner
+                                    android:id="@+id/sp_edad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:entries="@array/Edad"
+                                    android:textAlignment="center">
+
+                                </Spinner>
+
+                            <!--</android.support.design.widget.TextInputLayout>-->
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="8dp">
+
+                            <!--<android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColorHint="@color/lila">
+
+                                <EditText
+                                    android:id="@+id/editTextSexo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="SEXO"
+                                    android:inputType="textPersonName"
+                                    android:text="0"
+                                    android:textColor="#000" />
+
+                            </android.support.design.widget.TextInputLayout>-->
+                            <TextView
+                                android:text="SEXO:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/lila"
+                                android:textStyle="normal|bold"/>
+
+                            <Spinner
+                                android:id="@+id/sp_sexo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:entries="@array/Sexo"
+                                android:textAlignment="center">
+                            </Spinner>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <!--<android.support.design.widget.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColorHint="@color/lila">
+
+                                <EditText
+                                    android:id="@+id/editTextNroPollos"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:hint="Nro. Pollos"
+                                    android:inputType="number"
+                                    android:text="0"
+                                    android:textColor="#000" />
+
+                            </android.support.design.widget.TextInputLayout>-->
+
+                            <TextView
+                                android:text="N° POLLOS:"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/lila"
+                                android:textStyle="normal|bold"/>
+
+                            <EditText
+                                android:id="@+id/editTextNroPollos"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="8dp"
+                                android:ems="10"
+                                android:inputType="number"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="#000" />
+                        </TableRow>
+
+                    </TableLayout>
+
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                android:id="@+id/scroller"
+                >
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bk_tabla"
+                    >
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+
+                        <TextView
+                            android:text="Peso Corporal"
+                            android:id="@+id/textPesoCorporal"
+                            style="@style/titulo_1" />
+
+                        <TextView
+                            android:text="Peso Bursa"
+                            android:id="@+id/textPesoBursa"
+                            style="@style/titulo_1"/>
+
+                        <TextView
+                            android:text="Peso de Bazo"
+                            android:id="@+id/textPesodeBazo"
+                            style="@style/titulo_1"/>
+
+                        <TextView
+                            android:text="Peso de Timo(g)"
+                            android:id="@+id/textPesoTimo"
+                            android:textStyle="normal|bold"
+                            style="@style/titulo_1" />
+
+                        <TextView
+                            android:text="Peso de Higado"
+                            style="@style/titulo_1"
+                            android:id="@+id/textPesoHigado" />
+
+                        <TextView
+                            android:text="Indice Bursal"
+                            style="@style/titulo_1"
+                            android:id="@+id/textIndiceBursal" />
+
+                        <TextView
+                            android:text="Indice Timico"
+                            style="@style/titulo_1"
+                            android:id="@+id/textIndiceTimico" />
+
+                        <TextView
+                            android:text="Indice Hepatico"
+                            style="@style/titulo_1"
+                            android:id="@+id/textIndiceHepatico" />
+
+                        <TextView
+                            android:text="Bursometro"
+                            style="@style/titulo_1"
+                            android:id="@+id/textBursometro" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPcorporal1"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBursa1" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBazo1" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPTimo1" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPHigado1" />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceBursal1" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceTimico1" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceHepatico1" />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextBursometro1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPcorporal2" />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBursa2"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBazo2"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPTimo2"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPHigado2"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceBursal2"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceTimico2"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceHepatico2"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextBursometro2"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPcorporal3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBursa3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBazo3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPTimo3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPHigado3"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceBursal3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceTimico3"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceHepatico3"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextBursometro3"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPcorporal4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBursa4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBazo4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPTimo4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPHigado4"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceBursal4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceTimico4"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceHepatico4"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextBursometro4"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPcorporal5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBursa5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPBazo5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPTimo5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextPHigado5"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceBursal5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceTimico5"
+                            />
+
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextIndiceHepatico5"
+                            />
+                        <EditText
+                            style="@style/EditSIMPeso"
+                            android:id="@+id/editTextBursometro5"
+                            />
+
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/lila"
+                        >
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoPcorporal"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoPBursa"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoPBazo"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoPTimo"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoPHigado"
+                            android:enabled="false" />
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoIndiceBursal"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoIndiceTimico"
+                            android:enabled="false"/>
+
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoIndiceHepatico"
+                            android:enabled="false"/>
+                        <EditText
+                            style="@style/EditSIMProm"
+                            android:id="@+id/editTextResultadoBursometro"
+                            android:enabled="false"/>
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="match_parent"
+
+                            android:text="1.-Pico (asftas)"
+                            android:id="@+id/textView4" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Comisura"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/comisura"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Paladar Duro "
+                            />
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/paladar_duro"/>
+                    </TableRow>
+
+                    <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text="Paldar Blando"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/paladar_blando"/>
+                </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Necrosis de la Lengua"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/necrosis_lengua"/>
+                    </TableRow>
+
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="match_parent"
+                            android:text="2.-Petequias"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Pechuga"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/pechuga"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Pierna"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/pierna"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Esternon"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/esternon"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""/>
+                    </TableRow>
+
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="match_parent"
+                            android:text="3.-Tarsos"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Fragil"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/fragil"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Flexible"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/flexible"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Duro"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/duro"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="4.- Relación Morfo métrica Bursa/Bazo"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="A favor de la Bursa"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:layout_width="150sp"
+                            android:id="@+id/favor_bursa"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="A favor del Bazo"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/favor_bazo"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Relacion 1/1"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/relacion11"/>
+                    </TableRow>
+
+
+                </TableLayout>
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:text="5.-Apariencia de los pliegues de la Bursa"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Normal"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_apariencia"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Anormal"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/anormal_apariencia"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="match_parent"
+                            android:text="6.-Tamaño y apariencia del timo"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Normal"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_timo"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Anormal"/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:id="@+id/anormal_timo"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            android:layout_width="150sp"
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"/>
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="7.-Sacos Aereos"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Normales"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normales_sacos"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Aerosaculitis Abdominal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/aereo_abdominal"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Aereosaculitis Toracica"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/aereo_toracica"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="8.-Traquea"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Normal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_traquea"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Congestionada"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/congestionada_traquea"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Hemorragica"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/hemorragica"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Con Mucosidad"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/mucosidad"/>
+                    </TableRow>
+
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="9.-Cornetes Nasales"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Normal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_cornetes"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Congestionado"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/congestionado"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                <TableLayout
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk_tabla"
+                android:layout_marginRight="15sp"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        style="@style/titulo_1"
+                        android:layout_width="wrap_content"
+                        android:text="10.-Higados"
+                        android:inputType="textMultiLine"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIMT"
+                        android:text="Normal"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/normal_higado"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIMT"
+                        android:text="Inflamado"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/inflamado_higado"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIMT"
+                        android:text="Palido y Friable"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/palido_higado"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIMT"
+                        android:text="Moteado"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/moteado_higado"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIMT"
+                        android:text="Punto de Exudado"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/puntoExudado_higado"/>
+                </TableRow>
+
+            </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="11.-Vesicula Biliar"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Llena"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/llena_vesicula"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text="Vacia"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/vacia_vesicula"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIMT"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="12.-Proventriculo"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Normal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_proventriculo"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Proventriculitis"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/proventriculitis"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:text=""
+                            android:enabled="false"
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="13.-Ulceracion de Mollejas"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:textAlignment="textStart"
+                            android:padding="0sp"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Grado"/>
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="100sp"
+                            android:padding="0sp"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="Cantidad"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="0"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/grado_0"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="1"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/grado_1"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="2"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/grado_2"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="3"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/grado_3"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="14.-Intestinos"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Normal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_intestino"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Enteritis(yeyuno)"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/enteritis_yeyuno"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Equimosis"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/equimosis"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Desp. Mucosa"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/desp_mucosa"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Enteritis Mucoide"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/enteritis_mucoide"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Transito Rapido"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/transito_rapido"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Gas/Espuma"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/gas_espuma"/>
+                    </TableRow>
+                </TableLayout>
+
+                <TableLayout
+                android:layout_width="350sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk_tabla"
+                android:layout_marginRight="15sp"
+                >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    >
+                    <TextView
+                        style="@style/titulo_1"
+                        android:layout_width="wrap_content"
+                        android:text="15.-Coccida"
+                        android:inputType="textMultiLine"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text="Acervulina"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/acervulina"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text="Maxima"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/maxima"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text="Tenella"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/tenella"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text="Necratix"/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:id="@+id/necratix"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text=""/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text=""/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15sp"
+                    >
+                    <TextView
+                        style="@style/TxtSIM"
+                        android:text=""/>
+                    <EditText
+                        style="@style/EditSIM"
+                        android:enabled="false"
+                        android:text=""
+                        />
+                </TableRow>
+            </TableLayout>
+
+
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="16.-Ciegos(contenido)"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Normal"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/normal_ciegos"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Tiflitis erosiva"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/tiflitis_erosiva"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Placas Diftericas"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/placas_diftericas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Gaseosos (cont)"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/gaseosos"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Liquido (cont)"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/liquido"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Sangre (cont)"/>
+
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/sangre"/>
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="17.-Tonsillas lleocecales"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Reactiva"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/reactiva_tonsillas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="No Reactiva"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/no_reactiva_tonsillas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="18.-Placas de peyer"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Reactiva"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/reactiva_placas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="No Reactiva"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:id="@+id/no_reactiva_placas"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text=""/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:enabled="false"
+                            android:text=""
+                            />
+                    </TableRow>
+
+                </TableLayout>
+                <LinearLayout
+                    style="@style/LayoutVerticalc">
+                    <TextView
+                        style="@style/TxtCabezerasSIM"
+                        />
+                    <LinearLayout
+                        style="@style/LayoutHorizontalContenido">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/LayoutHorizontalContenido">
+
+                    </LinearLayout>
+                    <LinearLayout
+                        style="@style/LayoutHorizontalEspacio"/>
+                </LinearLayout>
+            </LinearLayout>
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+
+
+
+                <TableLayout
+                    android:layout_width="350sp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginRight="15sp"
+                    >
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="19.-Necrosis cabeza de femur"
+                            android:inputType="textMultiLine"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Presencia"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:layout_width="100sp"
+                            android:id="@+id/presencia"/>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15sp"
+                        >
+                        <TextView
+                            style="@style/TxtSIM"
+                            android:text="Ausencia"/>
+                        <EditText
+                            style="@style/EditSIM"
+                            android:layout_width="100sp"
+                            android:id="@+id/ausencia"/>
+                    </TableRow>
+                </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/colorPrimary"
+                    >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="OTRAS OBSERVACIONES"
+                    android:textColor="@color/colorPrimary"
+                    android:ems="10"
+                    android:id="@+id/editTextObservaciones" />
+                </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColorHint="@color/colorPrimary"
+                >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="COMENTARIOS"
+                    android:textColor="@color/colorPrimary"
+                    android:ems="10"
+                    android:id="@+id/editTextComentarios" />
+            </android.support.design.widget.TextInputLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25sp"
+                android:layout_marginBottom="25sp"
+
+                >
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bk_tabla"
+                    >
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="IMAGENES:"
+                            android:id="@+id/imagenes"
+                           />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_1"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            android:layout_margin="3sp"/>
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_2"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_3"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_4"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_5"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                       <!-- <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_6"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_7"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_8"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_9"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_10"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"
+                            />-->
+                    </TableRow>
+
+
+                </TableLayout>
+
+            </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bk_tabla"
+                    android:layout_marginTop="25sp"
+                    android:layout_marginBottom="25sp"
+                    >
+                    <TableRow
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:background="@color/colorPrimary"
+                        >
+                        <TextView
+                            style="@style/titulo_1"
+                            android:layout_width="wrap_content"
+                            android:text="IMAGEN DEL RESPONSABLE:"
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:layout_width="250sp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/im_foto_jefe"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/ic_camara"/>
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bk_tabla"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+
+                    <Button
+                        style="@style/boton_1"
+                        android:text="firmar"
+                        android:paddingRight="2sp"
+                        android:paddingLeft="2sp"
+                        android:id="@+id/bt_firmar_1"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/im_firma_1"
+                        />
+
+
+                        <TextView
+                            android:text="JEFE DE PLANTA DE INCUBACION"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            style="@style/TxtSIM"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    >
+
+                    <Button
+                        style="@style/boton_1"
+                        android:text="Firmar"
+                        android:paddingRight="2sp"
+                        android:paddingLeft="2sp"
+                        android:id="@+id/bt_firmar_2"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_launcher"
+                        android:id="@+id/im_firma_2"
+                        />
+
+                        <TextView
+                            android:text="POR: INVETSA"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            style="@style/TxtSIM"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

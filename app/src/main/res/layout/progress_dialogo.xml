@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Proceso de sincronización"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:padding="10sp"
+    android:textSize="25sp"
+    android:textColor="#fff"
+    android:textStyle="bold"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_detalle"
+        android:text="Nombre del archivo"
+        android:textColor="@color/lila"
+        android:padding="15sp"
+        />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:max="10"
+        android:progress="2"
+        android:padding="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:id="@+id/tv_proceso"
+        android:text=""
+        android:textColor="@color/lila"
+        android:layout_margin="5sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Aceptar"
+        android:id="@+id/bt_aceptar"
+        android:background="@drawable/bk_boton"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

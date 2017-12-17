@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_menu_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.grayhatcorp.invetsa.invetsa.Menu_principal"
+    tools:showIn="@layout/activity_menu_principal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <Button
+                    android:text="SIM Aves (Sistema Integral de Monitoreo)"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SIM"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+            />
+
+            <Button
+                android:text="Informe de Auditoria de Vacunación en P.I."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/HojaVerificacion"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:text="Informe de Servicio de Mantenimiento - Twin Shot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MaquinaTwinShot"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:text="Informe de Servicio de Mantenimiento - Spravac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MaquinaSpravac"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:text="Informe de Servicio de Mantenimiento - Zootec"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/MaquinaZootec"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:text="Sincronizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Sincronizar"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:drawableRight="@mipmap/ic_flecha_derecha"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+            <Button
+                android:text="Actualizar Datos"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:id="@+id/Actualizar"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+            <Button
+                android:text="Vaciar"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:id="@+id/Vaciar"
+                android:background="@drawable/bk_boton"
+                android:gravity="left|center"
+                android:padding="10sp"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        </ScrollView>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250sp"
+                android:src="@drawable/invetsa"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Formularios"
+                android:gravity="center"
+                android:layout_marginTop="25sp"
+                android:textColor="@color/lila"
+                android:textSize="25sp"
+                />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Version:0.1"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:textSize="15sp"
+                android:padding="15sp"
+                android:textColor="#000"
+                />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

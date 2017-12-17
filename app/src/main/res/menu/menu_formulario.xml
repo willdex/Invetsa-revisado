@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+       <item
+        android:id="@+id/it_ok"
+        android:orderInCategory="100"
+        android:icon="@mipmap/ic_ok"
+        app:showAsAction="always"
+        android:title="Guardar formulario"/>
+
+</menu>

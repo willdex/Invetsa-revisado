@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/50d7bbf8b9afb07c84e24163ce308a92c77cffe7/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_94fd52686797b52cba6e7df4bf3c439553f11e46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/096e4db544e47063f1373dcce327e4a672b454f9/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_ba58f773231289747f90ef9b2241623035f787a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/5c7ffcceb5668945f51238d0f3508ebe0e387b9d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_9a9321020f118783efa54f42c9e82a1a8777de9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.gradle/caches/modules-2/files-2.1/org.jbundle.util.osgi.wrapped/org.jbundle.util.osgi.wrapped.org.apache.http.client/4.1.2/98c86e42679fe7ac066f6c242e0d14f0bce0bb7c/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="98c86e42679fe7ac066f6c242e0d14f0bce0bb7c">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/org.jbundle.util.osgi.wrapped.org.apache.http.client-4.1.2_3bf31f749714fc8270311a216c66e97fe2847444.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/42d1d42c076abd21806c8fb23506313c2036f690/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_383d1fd19d1342cc8ac29b2c6611da4615b93d50.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/004e86175468e6aed5ef421f09d1c59f6ed53637/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_2b1fdc2b51632281dd9ef0cd05fa02616fbe146d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/79a824ac0c091c952137e9ee88afe8edbed1e6c8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_4d06d528d9237b86322beb61565f18c07cfc6f29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/1aac14b09540a0030dad0e3fa84df17cab5ae541/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_e72f85a4f7bfdbbd319c3c5a19e67341522b88f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_3aa7eb4996156145ef37cf2cf82ad04f14a64018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/8fa7010d2e5f7102205976e39c8c03c34bc3bd94/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_f3903838fd7df881ca9395fbe55d4abf44580419.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/bae3ab6547dac1cc14c400c8c589b07f7adf9406/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_f0a97fcaa531dceeb09d8cf039a57fdf4c48299f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/6cba091a5f7add3d2016d2da573be454875b8198/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_00275abf20e3eaa9e3883283747c0af2d8e709e5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ad5ae167182c98210accba70d5282b284569997d">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_77136af9be309bf15a3f0c070759e5999c437f13/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/e99e5e7ecc93b8d54dd23fb04872d384d22207dd/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_421fa5397efdbf2feae39c1d38571d37d63e9f53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/6cba091a5f7add3d2016d2da573be454875b8198/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_73f6e8e280aeba90d03da36b17666c58cd3287d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/1503ece466224e3c465d81326fde194d3e36a321/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_128256a8fef85f142b7908ce917b575ff1ed880f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_f86c426e6016d349f44e6f02533cf9f672f47e0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/e99e5e7ecc93b8d54dd23fb04872d384d22207dd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_5f489a18022102fe7980ca23e520b34d6e728c78.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/1a61e073380dfcb71e2e58a72b50e8ea049c2213/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_d08da13d20478545eec94c4459eb78338b191025.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/50d7bbf8b9afb07c84e24163ce308a92c77cffe7/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_8b89dcd4968709ae385ddc628709e5649bffc39c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/1503ece466224e3c465d81326fde194d3e36a321/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/classes_603e26295ea9926a07c5fda9f51eb03ab4e772ff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/root/.android/build-cache/1aac14b09540a0030dad0e3fa84df17cab5ae541/output/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/home/rodzmartn/Desktop/invetsa2/Invetsa/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_753148ddfdc2b8d07a91e1e6698420d5871a11d5.jar" />
+    </item>
+
+</items>

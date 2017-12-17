@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.grayhatcorp.invetsa.invetsa">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    ﻿
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login"
+            android:label="Invetsa"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"  />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Sincronizar" android:screenOrientation="landscape"/>
+        <activity android:name=".Pruebas" />
+        <activity
+            android:name=".Menu_historial"
+            android:label="@string/title_activity_menu_historial"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.zootec.Formulario_zootec"
+            android:label="@string/title_activity_furmulario_zootec"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hoja_verificacion.Main_hoja_verificacion"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menu_principal"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sistema_integral_monitoreo.Main_sistema_integral_monitoreo"
+            android:label="@string/title_activity_main_sistema_integral_monitoreo"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.spravac.Main_spravac"
+            android:label="@string/title_activity_main_spravac"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hoja_verificacion.Detalle_Hoja_verificacion"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.twin_shot.Main_twin_shot"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.zootec.Main_zootec"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".hoja_verificacion.HojaDeVerificacion"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sistema_integral_monitoreo.SistemaIntegralMonitoreo"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            />
+        <activity
+            android:name=".servicio_mantenimiento.spravac.MaquinaSpravac"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.twin_shot.MaquinaTwinShot"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sistema_integral_monitoreo.Detalle_sistema_integral"
+            android:label="@string/title_activity_detalle_sistema_integral"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.spravac.Detalle_spravac"
+            android:label="@string/title_activity_detalle_spravac"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.twin_shot.Detalle_twin_shot"
+            android:label="@string/title_activity_detalle_twin_shot"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".servicio_mantenimiento.zootec.Detalle_zootec"
+            android:label="@string/title_activity_detalle_zootec"
+            android:screenOrientation="sensorLandscape"
+            android:configChanges="screenSize|orientation"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

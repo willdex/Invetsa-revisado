@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUEVO"
+            android:drawableLeft="@mipmap/ic_mas"
+            android:background="@drawable/bk_boton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/bt_nuevo"
+            />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_flecha_izquierda"
+            android:background="@drawable/bk_boton_invertido"
+            android:gravity="left|center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/ib_izquierda"
+            android:padding="10sp"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="FORUMLARIO"
+            android:background="@drawable/bk_boton_invertido"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/bt_formulario"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_flecha_derecha"
+            android:background="@drawable/bk_boton_invertido"
+            android:gravity="left|center"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:id="@+id/ib_derecha"
+            android:padding="10sp"
+            />
+    </LinearLayout>
+</LinearLayout>

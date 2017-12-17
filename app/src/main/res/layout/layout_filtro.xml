@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASCENDENTE"
+        android:id="@+id/bt_ascendente"
+        android:background="@drawable/bk_boton"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DESCENDENTE"
+        android:id="@+id/bt_descendente"
+        android:background="@drawable/bk_boton"
+        android:gravity="center"
+        android:padding="10sp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

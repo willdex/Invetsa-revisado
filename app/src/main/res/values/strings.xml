@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Invetsa</string>
+
+    <!-- Strings related to login -->
+    <string-array name="Temperatura">
+        <item>23°C</item>
+        <item>24°C</item>
+        <item>25°C</item>
+        <item>26°C</item>
+        <item>27°C</item>
+        <item>28°C</item>
+    </string-array>
+
+    <string-array name="Edad">
+        <item>21</item>
+        <item>25</item>
+        <item>28</item>
+        <item>35</item>
+    </string-array>
+
+    <string-array name="Sexo">
+        <item>Macho</item>
+        <item>Hembra</item>
+        <item>Mixto</item>
+    </string-array>
+
+    <string-array name="Humedad">
+        <item>-</item>
+        <item>N/C</item>
+    </string-array>
+
+    <string-array name="Tuberia">
+        <item>Nuevo</item>
+        <item>Reuso</item>
+    </string-array>
+
+    <string-array name="Esterilizador">
+        <item>Lavado con Detergente</item>
+        <item>No Lavado</item>
+    </string-array>
+
+    <string-array name="Mesa">
+        <item>Circular</item>
+        <item>Lineal</item>
+        <item>Individual</item>
+    </string-array>
+    <string-array name="Empresas">
+        <item>INVETSA</item>
+        <item>GRAY HAY CORP</item>
+        <item>SOFIA</item>
+    </string-array>
+
+    <string-array name="Cajas">
+        <item>Plasticas</item>
+        <item>Carton</item>
+    </string-array>
+
+    <string-array name="Ventilacion">
+        <item>SI</item>
+        <item>NO</item>
+        <item>-</item>
+    </string-array>
+    <string-array name="Jeringas">
+        <item>SI(5 ml)</item>
+        <item>NO(10 ml)</item>
+    </string-array>
+    <string-array name="Presion">
+        <item>SI</item>
+        <item>NO</item>
+    </string-array>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="servidor2">http://192.168.0.33:80/Invetsa-www/</string>
+    <string name="servidor4">http://192.168.56.1:80/Invetsa-www/</string>
+    <string name="servidor">http://35.224.55.243/</string>
+    <string name="servidor3">http://104.154.25.23/invetsaserviciosweb/</string>
+
+    <string name="revision_hoja_de_verificacion">00</string>
+    <string name="revision_sistema_integral_monitoreo">00</string>
+    <string name="revision_zootec">00</string>
+    <string name="revision_spravac">00</string>
+    <string name="revision_twin_shot">00</string>
+
+    <string name="codigo_hoja_de_verificacion">R.51</string>
+    <string name="codigo_sistema_integral_monitoreo">R.50</string>
+    <string name="codigo_zootec">P.00</string>
+    <string name="codigo_spravac">P.00</string>
+    <string name="codigo_twin_shot">R.53</string>
+
+    <string name="title_activity_menu_historial">Menu_historial</string>
+    <string name="title_activity_furmulario_zootec">Furmulario_zootec</string>
+    <string name="title_menuhojaverificacion_list">Items</string>
+    <string name="title_menuhojaverificacion_detail">menu_hoja_verificacion Detail</string>
+    <string name="title_activity_main_hoja_verificacion">Main_hoja_verificacion</string>
+    <string name="title_activity_menu_principal">Menu_principal</string>
+    <string name="title_activity_main_sistema_integral_monitoreo">Main_sistema_integral_monitoreo
+    </string>
+    <string name="title_activity_main_spravac">Main_spravac</string>
+    <string name="title_activity_main_twin_shot">Main_twin_shot</string>
+    <string name="title_activity_main_zootec">Main_zootec</string>
+    <string name="title_activity_hoja_de_verificacion">HojaDeVerificacion</string>
+    <string name="title_activity_sistema_integral_monitoreo">SistemaIntegralMonitoreo</string>
+    <string name="title_activity_maquina_spravac">MaquinaSpravac</string>
+    <string name="title_activity_maquina_twin_shot">MaquinaTwinShot</string>
+    <string name="title_activity_detalle_sistema_integral">Detalle_sistema_integral</string>
+    <string name="title_activity_detalle_spravac">Detalle_spravac</string>
+    <string name="title_activity_detalle_twin_shot">Detalle_twin_shot</string>
+    <string name="title_activity_detalle_zootec">Detalle_zootec</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TITULO"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/tv_titulo"
+        android:padding="15sp"
+        android:background="@color/colorPrimary"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instruction"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fl_view"
+        android:layout_margin="1sp"
+        >
+
+    <com.grayhatcorp.invetsa.invetsa.TouchView
+        android:layout_width="match_parent"
+        android:layout_height="320sp"
+        android:background="#FFF"
+        android:id="@+id/tc_view"
+        android:layout_margin="1sp"
+        />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:id="@+id/bt_borrar"
+            android:background="@drawable/bk_boton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:drawableRight="@mipmap/ic_x"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Listo"
+            android:id="@+id/bt_listo"
+            android:background="@drawable/bk_boton"
+            android:gravity="center"
+            android:padding="10sp"
+            android:drawableRight="@mipmap/ic_ok"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,222 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="texto">
+        <item name="android:layout_width">250px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <style name="CodProveedorCabesera">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CodProveedorCabeseraZootec">
+        <item name="android:layout_width">150px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CodProveedorZootec">
+        <item name="android:layout_width">150px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:paddingLeft">15dp</item>
+    </style>
+
+    <style name="CodProveedor">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+    <style name="DescripcionCabesera">
+        <item name="android:layout_width">250px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="DescripcionCabeseraZootec">
+        <item name="android:layout_width">350px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="DescripcionZootec">
+        <item name="android:layout_width">350px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="Descripcion">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#000</item>
+
+    </style>
+
+    <style name="Estado">
+        <item name="android:layout_width">150px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="opcionesBRM">
+        <item name="android:layout_width">50px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CriterioCabezera">
+        <item name="android:layout_width">300px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Criterio">
+        <item name="android:layout_width">300px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal|bold</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="TxtCabezerasSIM">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TxtSIM">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+        <!--<item name="android:layout_weight">1</item>-->
+    </style>
+
+    <style name="TxtSIM2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+        <!--<item name="android:layout_weight">1</item>-->
+    </style>
+
+    <style name="TxtSIMT">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="EditSIM">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">number</item>
+        <item name="android:text">0</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="EditSIMPeso">
+        <item name="android:layout_width">50px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:text">0.00</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000</item>
+
+
+    </style>
+
+    <style name="EditSIMProm">
+        <item name="android:layout_width">50px</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:text">0.00</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="LayoutVerticalc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LayoutHorizontalContenido">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LayoutHorizontalEspacio">
+        <item name="android:layout_width">30px</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="boton_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bk_boton</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="titulo_1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">10sp</item>
+        <item name="android:layout_margin">5sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

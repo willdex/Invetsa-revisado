@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.grayhatcorp.invetsa.invetsa.sistema_integral_monitoreo.SistemaIntegralMonitoreo">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SIM Aves (Sistema Integral de Monitoreo)"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="25sp"
+                    android:layout_weight="1"
+                    android:hint="FECHA"
+                    android:id="@+id/fecha"
+                    android:text="28/03/2017"
+                    style="@style/boton_1"
+                    android:layout_gravity="left"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Codigo"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:paddingRight="5sp"
+                    android:gravity="center_vertical|right"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/codigo_sistema_integral_monitoreo"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:paddingRight="15sp"
+                    android:gravity="center_vertical|right"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Revisión"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:paddingRight="5sp"
+                    android:gravity="center_vertical|right"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/revision_sistema_integral_monitoreo"
+                    android:textColor="#fff"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    android:gravity="center_vertical|right"
+                    />
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_sistema_integral_monitoreo" />
+
+
+</android.support.design.widget.CoordinatorLayout>
